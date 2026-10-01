@@ -1,0 +1,118 @@
+.people-panel {
+  margin-top: 25px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e3eaf4;
+  border-radius: 18px;
+}
+.people-heading, .people-form-heading, .people-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.people-heading h2 { margin: 12px 0 4px; font-size: 24px; }
+.people-panel button {
+  border: 1px solid #dce4ef;
+  background: white;
+  color: #315dce;
+  padding: 10px 13px;
+  border-radius: 9px;
+  font-weight: 700;
+}
+.people-panel .people-primary {
+  background: #315dce;
+  border-color: #315dce;
+  color: white;
+}
+.people-search {
+  margin: 22px 0;
+  display: flex;
+  gap: 10px;
+}
+.people-search input {
+  flex: 1;
+  margin: 0;
+  border: 1px solid #dce4ef;
+  padding: 12px;
+  border-radius: 9px;
+  min-width: 0;
+}
+.people-form {
+  margin: 0 0 25px;
+  background: #f7f9fd;
+  border: 1px solid #e4eaf5;
+  padding: 23px;
+  border-radius: 13px;
+}
+.people-form-heading h3 { margin: 0 0 20px; }
+.people-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+.people-fields label {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.people-fields input, .people-fields select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #dce4ef;
+  border-radius: 9px;
+  background: white;
+  color: #1b2b45;
+  margin: 0;
+}
+.people-form-actions { justify-content: flex-end; margin-top: 22px; }
+.people-table-wrap { overflow-x: auto; }
+.people-table { width: 100%; border-collapse: collapse; text-align: left; }
+.people-table th {
+  color: #8190a7;
+  font-size: 12px;
+  padding: 15px 10px;
+  background: #f7f9fd;
+}
+.people-table td {
+  padding: 17px 10px;
+  font-size: 13px;
+  border-bottom: 1px solid #ebeff6;
+}
+.people-table td small {
+  display: block;
+  color: #8190a7;
+  margin-top: 5px;
+}
+.people-active, .people-inactive {
+  display: inline-block;
+  padding: 7px 9px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.people-active { background: #e5f7ec; color: #187444; }
+.people-inactive { background: #fff0f2; color: #b82f44; }
+.people-actions { display: flex; gap: 6px; }
+.people-password, .people-success {
+  border-radius: 10px;
+  padding: 15px;
+  margin: 18px 0;
+}
+.people-success { background: #e5f7ec; color: #187444; }
+.people-password { background: #fff8df; color: #785917; }
+.people-password code {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.people-password p { margin-bottom: 0; font-size: 12px; }
+@media (max-width: 750px) {
+  .people-panel { padding: 18px; }
+  .people-heading { flex-wrap: wrap; }
+  .people-fields { grid-template-columns: 1fr; }
+}
